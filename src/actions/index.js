@@ -5,6 +5,13 @@ export const addAuthor = author => {
   };
 };
 
+export const removeBook = id => {
+  return {
+    type: 'REMOVE_BOOK',
+    id
+  };
+};
+
 export const removeAuthor = id => {
   return {
     type: 'REMOVE_AUTHOR',
@@ -16,12 +23,5 @@ export const addBook = book => {
   return {
     type: 'ADD_BOOK',
     book
-  };
-};
-
-export const removeBook = id => {
-  return {
-    type: 'REMOVE_BOOK',
-    id
   };
 };
